@@ -40,7 +40,7 @@ model = load_model()
 if st.button("Run Agent and Generate Video"):
     with st.spinner("Agent is flying... capturing frames..."):
         # Initialize environment to render RGB arrays for our GIF
-       env = gym.make("LunarLander-v3", render_mode="rgb_array")
+    env = gym.make("LunarLander-v3", render_mode="rgb_array")
         state, _ = env.reset()
         done = False
         
